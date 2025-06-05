@@ -20,11 +20,973 @@
     <!-- css/js -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap" media="print" onload="this.media='all'" />
+    <link rel="preload" as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" media="print" onload="this.media='all'" />
   </head>
   <body>
-    <h1>Hello World</h1>
-    <img src="images/sample-image.webp" alt="ダミー画像" />
+    <div class="l-wrapper">
+      <div class="l-hero js-load">
+        <a href="" target="_blank" class="l-hero__logo">
+          <picture>
+            <source srcset="images/webp/logo.webp" type="image/webp" width="193" height="153" />
+            <img src="images/logo.png" alt="CREDIT SAISON" width="193" height="153" />
+          </picture>
+        </a>
+        <div class="l-hero__pop"><img src="images/hero_pop.svg" alt="会員様特別案内" width="191" height="226" /></div>
+        <div class="l-hero__titleline">
+          <h1 class="l-hero__titleline-title"><img src="images/hero_title.svg" alt="セゾンのフィナンシャルアドバイスサービス" width="646" height="254" /></h1>
+          <div class="l-hero__titleline-image">
+            <picture>
+              <source srcset="images/webp/hero_person.webp" type="image/webp" width="708" height="637" />
+              <img src="images/hero_person.png" alt="男性のイラスト" width="708" height="637" />
+            </picture>
+          </div>
+        </div>
+      </div>
+      <section class="l-service">
+        <h2 class="l-section__heading l-section__heading--service js-scroll"><img src="images/service-head.svg" alt="service サービス案内 相談無料" width="380" height="216" /></h2>
+        <div class="l-service__content">
+          <div class="l-section__ribbon-heading js-scroll">
+            <div class="l-section__ribbon-heading-inner">
+              <div class="l-section__ribbon-heading-logo">
+                <picture>
+                  <source srcset="images/webp/logo.webp" type="image/webp" width="98" height="78" />
+                  <img src="images/logo.png" alt="CREDIT SAISON" width="98" height="78" />
+                </picture>
+              </div>
+              <p class="l-section__ribbon-heading-text">認定FPをご紹介</p>
+            </div>
+          </div>
+          <p class="l-service__caption js-scroll">お金周りの専門家(FP)にお金に関する、様々なご相談が出来るようになりました！</p>
+          <div class="l-service__figure js-scroll">
+            <div class="l-service__figure-person">
+              <picture>
+                <source srcset="images/webp/service-person.webp" type="image/webp" width="217" height="169" />
+                <img src="images/service-person.png" alt="男性のイラスト" width="217" height="169" />
+              </picture>
+            </div>
+            <div class="l-service__figure-pop-area">
+              <p class="l-service__figure-pop-image l-service__figure-pop-image--left">
+                <picture>
+                  <source srcset="images/webp/service-pop1.webp" type="image/webp" width="166" height="178" />
+                  <img src="images/service-pop1.png" alt="お金周りのご相談" width="166" height="178" />
+                </picture>
+              </p>
+              <p class="l-service__figure-pop-image l-service__figure-pop-image--right">
+                <picture>
+                  <source srcset="images/webp/service-pop2.webp" type="image/webp" width="166" height="178" />
+                  <img src="images/service-pop2.png" alt="情報提供だけでもOK" width="166" height="178" />
+                </picture>
+              </p>
+            </div>
+          </div>
+          <div class="l-service__list">
+            <p class="l-sercive__list-heaging js-scroll">ライフプラン表の作成</p>
+            <div class="l-service__lifeplan-graph">
+              <div class="l-service__lifeplan-graph-image js-scroll">
+                <picture>
+                  <source srcset="images/webp/service-graph.webp" type="image/webp" width="312" height="161" />
+                  <img src="images/service-graph.png" alt="ライフプラン表のグラフ" width="312" height="161" />
+                </picture>
+              </div>
+              <p class="l-service__caption js-scroll">
+                年齢や今の生活・今後のライフプランから、将来の<span class="l-service__caption-strong">お金の流れを見える化</span>します！
+              </p>
+            </div>
+          </div>
+          <div class="l-service__list">
+            <p class="l-sercive__list-heaging js-scroll">様々なご相談が可能！</p>
+            <div class="l-service__consultation">
+              <div class="l-service__consultation-image js-scroll">
+                <picture>
+                  <source srcset="images/webp/service-list.webp" type="image/webp" width="651" height="226" />
+                  <img src="images/service-list.png" alt="相談項目のイラスト" width="651" height="226" />
+                </picture>
+              </div>
+              <p class="l-service__caption l-service__caption--center js-scroll">
+                そのほか家計診断などの
+                <br />
+                <span class="l-service__caption-strong">お金周り全般のご相談が可能です！</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-chart">
+        <p class="l-section__heading l-section__heading--chart js-scroll"><img src="images/chart-head.svg" alt="service ご相談内容" width="310" height="108" /></p>
+        <p class="l-chart__question js-scroll">
+          今までにFP相談を
+          <br />
+          されたことはありますか？
+        </p>
+        <ul class="l-chart__yesno js-scroll">
+          <li class="l-chart__yesno-list" data-answer="yes"><div class="l-chart__yesno-list-inner">はい</div></li>
+          <li class="l-chart__yesno-list" data-answer="no"><div class="l-chart__yesno-list-inner">いいえ</div></li>
+        </ul>
+        <div class="l-answer l-answer--yes js-scroll">
+          <div class="l-answer__intro js-scroll">
+            <div class="l-answer__intro-figure">
+              <div class="l-answer__intro-figure-illust">
+                <picture>
+                  <source srcset="images/webp/answer-adviser.webp" type="image/webp" width="334" height="234" />
+                  <img src="images/answer-adviser.png" alt="アドバイザーのイラスト" width="334" height="234" />
+                </picture>
+              </div>
+              <p class="l-answer__intro-figure-text l-answer__intro-figure-text--yes"><img src="images/answer-yes-comment.svg" alt="その際の相談についてお聞かせください" width="327" height="79" /></p>
+            </div>
+            <div class="l-answer__intro-pop-list js-scroll">
+              <p class="l-answer__intro-pop"><span class="l-answer__intro-pop-text">どんなお話を聞かれましたか？</span></p>
+              <p class="l-answer__intro-pop"><span class="l-answer__intro-pop-text">満足できる内容でしたか？</span></p>
+            </div>
+          </div>
+          <div class="l-answer__point js-scroll">
+            <p class="l-answer__point-heading"><img src="images/answer-point-head.svg" alt="ポイント" width="364" heihgt="80" /></p>
+            <div class="l-answer__point-inner">
+              <div class="l-section__ribbon-heading l-section__ribbon-heading--point">
+                <div class="l-section__ribbon-heading-inner l-section__ribbon-heading-inner--point">
+                  <div class="l-section__ribbon-heading-logo">
+                    <picture>
+                      <source srcset="images/webp/logo.webp" type="image/webp" width="98" height="78" />
+                      <img src="images/logo.png" alt="CREDIT SAISON" width="98" height="78" />
+                    </picture>
+                  </div>
+                  <p class="l-section__ribbon-heading-text">認定FPだから</p>
+                </div>
+              </div>
+              <p class="l-answer__point-text">
+                中立的な立場で2ndオピニオンとし
+                <br />
+                てもご活用いただけます。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="l-answer l-answer--no js-scroll">
+          <div class="l-answer__intro js-scroll">
+            <div class="l-answer__intro-figure l-answer__intro-figure--no">
+              <div class="l-answer__intro-figure-illust">
+                <picture>
+                  <source srcset="images/webp/answer-adviser.webp" type="image/webp" width="334" height="234" />
+                  <img src="images/answer-adviser.png" alt="アドバイザーのイラスト" width="334" height="234" />
+                </picture>
+              </div>
+              <p class="l-answer__intro-figure-text l-answer__intro-figure-text--no"><img src="images/answer-no-comment.svg" alt="お金周りで何か気になりますか？" width="260" height="79" /></p>
+            </div>
+          </div>
+        </div>
+        <div class="l-type">
+          <div class="l-section__heading l-section__heading--type js-scroll"><img src="images/answer-type-head.svg" alt="type お悩みタイプ" width="382" height="105" /></div>
+          <ul class="l-type__list">
+            <li class="l-type__list-item js-scroll" data-type="1">
+              <p class="l-type__list-item-heading">資産運用</p>
+              <div class="l-type__list-item-inner">
+                <p class="l-type_list-item-text l-type_list-item-text--type1">
+                  iDeCo
+                  <br />
+                  NISAなど
+                </p>
+                <div class="l-type__list-item-illust l-type__list-item-illust--type1">
+                  <picture>
+                    <source srcset="images/webp/answer-type-illust1.webp" type="image/webp" width="189" height="112" />
+                    <img src="images/answer-type-illust1.png" alt="お金のイラスト" width="189" height="112" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="l-type__list-item js-scroll" data-type="2">
+              <p class="l-type__list-item-heading">保険</p>
+              <div class="l-type__list-item-inner">
+                <p class="l-type_list-item-text l-type_list-item-text--type2">無料診断など</p>
+                <div class="l-type__list-item-illust l-type__list-item-illust--type2">
+                  <picture>
+                    <source srcset="images/webp/answer-type-illust2.webp" type="image/webp" width="140" height="135" />
+                    <img src="images/answer-type-illust2.png" alt="男性のイラスト" width="140" height="135" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="l-type__list-item js-scroll" data-type="3">
+              <p class="l-type__list-item-heading">ライフプラン</p>
+              <div class="l-type__list-item-inner">
+                <p class="l-type_list-item-text l-type_list-item-text--type3">
+                  教育・老後
+                  <br />
+                  資金など
+                </p>
+                <div class="l-type__list-item-illust l-type__list-item-illust--type3">
+                  <picture>
+                    <source srcset="images/webp/answer-type-illust3.webp" type="image/webp" width="113" height="126" />
+                    <img src="images/answer-type-illust3.png" alt="貯金箱のイラスト" width="113" height="126" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+            <li class="l-type__list-item js-scroll" data-type="4">
+              <p class="l-type__list-item-heading">節税対策</p>
+              <div class="l-type__list-item-inner">
+                <p class="l-type_list-item-text l-type_list-item-text--type4">
+                  ふるさと納税
+                  <br />
+                  相続など
+                </p>
+                <div class="l-type__list-item-illust l-type__list-item-illust--type4">
+                  <picture>
+                    <source srcset="images/webp/answer-type-illust4.webp" type="image/webp" width="180" height="117" />
+                    <img src="images/answer-type-illust4.png" alt="家のイラスト" width="180" height="117" />
+                  </picture>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="l-category l-category--asset js-scroll" data-category="1">
+          <div class="l-category__theme js-scroll">
+            <div class="l-category__theme-illust">
+              <picture>
+                <source srcset="images/webp/category-icon1.webp" type="image/webp" width="192" height="192" />
+                <img src="images/category-icon1.png" alt="お金のイラスト" width="192" height="192" />
+              </picture>
+            </div>
+            <div class="l-category__theme-headline">
+              <p class="l-category__theme-headline-main">資産運用</p>
+              <p class="l-category__theme-headline-sub">
+                どんな運用をされて
+                <br />
+                いらっしゃいますか？
+              </p>
+            </div>
+          </div>
+          <div class="l-category__detail">
+            <p class="l-category__detail-heading js-scroll">こんなお悩みもご相談できます！</p>
+            <ul class="l-category__list js-scroll">
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust1.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust1.jpg" alt="虫眼鏡を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  もっといい
+                  <br />
+                  運用方法があるかも...
+                </p>
+              </li>
+              <li class="l-category__list-item l-category__list-item--reverse">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust2.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust2.jpg" alt="松明を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  今の運用に
+                  <br />
+                  不安を感じている
+                </p>
+              </li>
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust3.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust3.jpg" alt="お金とハートを持った女性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  余剰資金があるので
+                  <br />
+                  追加で運用したい！
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-category l-category--asset js-scroll" data-category="2">
+          <div class="l-category__theme js-scroll">
+            <div class="l-category__theme-illust">
+              <picture>
+                <source srcset="images/webp/category-icon1.webp" type="image/webp" width="192" height="192" />
+                <img src="images/category-icon1.png" alt="お金のイラスト" width="192" height="192" />
+              </picture>
+            </div>
+            <div class="l-category__theme-headline">
+              <p class="l-category__theme-headline-main">資産運用</p>
+              <p class="l-category__theme-headline-sub">
+                まだ始めていないのは
+                <br />
+                何かご理由がありますか？
+              </p>
+            </div>
+          </div>
+          <div class="l-category__detail">
+            <p class="l-category__detail-heading js-scroll">こんなお悩みもご相談できます！</p>
+            <ul class="l-category__list js-scroll">
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust1.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust1.jpg" alt="虫眼鏡を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  iDeCo・NISAは
+                  <br />
+                  今からでも間に合う？
+                </p>
+              </li>
+              <li class="l-category__list-item l-category__list-item--reverse">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust2.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust2.jpg" alt="松明を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  株式や投資信託
+                  <br />
+                  って難しそう...
+                </p>
+              </li>
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust3.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust3.jpg" alt="お金とハートを持った女性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  変額保険や個人年金
+                  <br />
+                  保険での投資って？
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-category l-category--insurance js-scroll" data-category="3">
+          <div class="l-category__theme js-scroll">
+            <div class="l-category__theme-illust">
+              <picture>
+                <source srcset="images/webp/category-icon2.webp" type="image/webp" width="192" height="192" />
+                <img src="images/category-icon2.png" alt="虫眼鏡を持った男性のイラスト" width="192" height="192" />
+              </picture>
+            </div>
+            <div class="l-category__theme-headline">
+              <p class="l-category__theme-headline-main">保険</p>
+              <p class="l-category__theme-headline-sub">
+                医療保険・死亡保険など
+                <br />
+                どんな保険にお入りですか？
+              </p>
+            </div>
+          </div>
+          <div class="l-category__detail">
+            <p class="l-category__detail-heading js-scroll">こんなお悩みもご相談できます！</p>
+            <ul class="l-category__list js-scroll">
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust1.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust1.jpg" alt="虫眼鏡を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  月々の保険料
+                  <br />
+                  もっと安くならない？
+                </p>
+              </li>
+              <li class="l-category__list-item l-category__list-item--reverse">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust2.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust2.jpg" alt="松明を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  今の保険で保障が
+                  <br />
+                  足りるか心配
+                </p>
+              </li>
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust3.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust3.jpg" alt="お金とハートを持った女性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  追加で保険を
+                  <br />
+                  検討したい
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-category l-category--insurance js-scroll" data-category="4">
+          <div class="l-category__theme js-scroll">
+            <div class="l-category__theme-illust">
+              <picture>
+                <source srcset="images/webp/category-icon2.webp" type="image/webp" width="192" height="192" />
+                <img src="images/category-icon2.png" alt="虫眼鏡を持った男性のイラスト" width="192" height="192" />
+              </picture>
+            </div>
+            <div class="l-category__theme-headline">
+              <p class="l-category__theme-headline-main">保険</p>
+              <p class="l-category__theme-headline-sub">
+                ご準備されていないのには
+                <br />
+                理由がありますか？
+              </p>
+            </div>
+          </div>
+          <div class="l-category__detail">
+            <p class="l-category__detail-heading js-scroll">こんなお悩みもご相談できます！</p>
+            <ul class="l-category__list js-scroll">
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust1.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust1.jpg" alt="虫眼鏡を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  どの保険が
+                  <br />
+                  自分に合ってるの？
+                </p>
+              </li>
+              <li class="l-category__list-item l-category__list-item--reverse">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust2.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust2.jpg" alt="松明を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  どんな保険に入れば
+                  <br />
+                  いいかわからない
+                </p>
+              </li>
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust3.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust3.jpg" alt="お金とハートを持った女性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  どのくらい入って
+                  <br />
+                  おけばいいの？
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-category l-category--lifeplan js-scroll" data-category="5">
+          <div class="l-category__theme js-scroll">
+            <div class="l-category__theme-illust">
+              <picture>
+                <source srcset="images/webp/category-icon3.webp" type="image/webp" width="192" height="192" />
+                <img src="images/category-icon3.png" alt="貯金箱のイラスト" width="192" height="192" />
+              </picture>
+            </div>
+            <div class="l-category__theme-headline">
+              <p class="l-category__theme-headline-main">ライフプラン</p>
+              <p class="l-category__theme-headline-sub">
+                どんな方法でご準備されて
+                <br />
+                いらっしゃいますか？
+              </p>
+            </div>
+          </div>
+          <div class="l-category__detail">
+            <p class="l-category__detail-heading js-scroll">こんなお悩みもご相談できます！</p>
+            <ul class="l-category__list js-scroll">
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust1.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust1.jpg" alt="虫眼鏡を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  もっと効率の良い
+                  <br />
+                  方法があるのでは？
+                </p>
+              </li>
+              <li class="l-category__list-item l-category__list-item--reverse">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust2.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust2.jpg" alt="松明を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  今の準備だけで
+                  <br />
+                  足りるのか不安...
+                </p>
+              </li>
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust3.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust3.jpg" alt="お金とハートを持った女性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  余裕を持って
+                  <br />
+                  追加で準備したい！
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-category l-category--lifeplan js-scroll" data-category="6">
+          <div class="l-category__theme js-scroll">
+            <div class="l-category__theme-illust">
+              <picture>
+                <source srcset="images/webp/category-icon3.webp" type="image/webp" width="192" height="192" />
+                <img src="images/category-icon3.png" alt="貯金箱のイラスト" width="192" height="192" />
+              </picture>
+            </div>
+            <div class="l-category__theme-headline">
+              <p class="l-category__theme-headline-main">ライフプラン</p>
+              <p class="l-category__theme-headline-sub">
+                まだご準備されていない
+                <br />
+                理由はございますか？
+              </p>
+            </div>
+          </div>
+          <div class="l-category__detail">
+            <p class="l-category__detail-heading js-scroll">こんなお悩みもご相談できます！</p>
+            <ul class="l-category__list js-scroll">
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust1.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust1.jpg" alt="虫眼鏡を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  いつまでに
+                  <br />
+                  いくら必要なの？
+                </p>
+              </li>
+              <li class="l-category__list-item l-category__list-item--reverse">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust2.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust2.jpg" alt="松明を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  どんな方法が
+                  <br />
+                  いいんだろう...
+                </p>
+              </li>
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust3.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust3.jpg" alt="お金とハートを持った女性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  リスクが怖くて
+                  <br />
+                  始められない
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-category l-category--tax js-scroll" data-category="7">
+          <div class="l-category__theme js-scroll">
+            <div class="l-category__theme-illust">
+              <picture>
+                <source srcset="images/webp/category-icon4.webp" type="image/webp" width="192" height="192" />
+                <img src="images/category-icon4.png" alt="家のイラスト" width="192" height="192" />
+              </picture>
+            </div>
+            <div class="l-category__theme-headline">
+              <p class="l-category__theme-headline-main">節税対策</p>
+              <p class="l-category__theme-headline-sub">
+                どんな対策をされて
+                <br />
+                いらっしゃいますか？
+              </p>
+            </div>
+          </div>
+          <div class="l-category__detail">
+            <p class="l-category__detail-heading js-scroll">こんなお悩みもご相談できます！</p>
+            <ul class="l-category__list js-scroll">
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust1.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust1.jpg" alt="虫眼鏡を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  ふるさと納税以外の
+                  <br />
+                  節税対策は？
+                </p>
+              </li>
+              <li class="l-category__list-item l-category__list-item--reverse">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust2.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust2.jpg" alt="松明を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  ふるさと納税って
+                  <br />
+                  これであってる？
+                </p>
+              </li>
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust3.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust3.jpg" alt="お金とハートを持った女性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  少しでも節税して
+                  <br />
+                  余裕を持ちたい
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-category l-category--tax js-scroll" data-category="8">
+          <div class="l-category__theme js-scroll">
+            <div class="l-category__theme-illust">
+              <picture>
+                <source srcset="images/webp/category-icon4.webp" type="image/webp" width="192" height="192" />
+                <img src="images/category-icon4.png" alt="家のイラスト" width="192" height="192" />
+              </picture>
+            </div>
+            <div class="l-category__theme-headline">
+              <p class="l-category__theme-headline-main">節税対策</p>
+              <p class="l-category__theme-headline-sub">
+                どんな方法・選択をしたら
+                <br />
+                いいか難しいですよね？
+              </p>
+            </div>
+          </div>
+          <div class="l-category__detail">
+            <p class="l-category__detail-heading js-scroll">こんなお悩みもご相談できます！</p>
+            <ul class="l-category__list js-scroll">
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust1.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust1.jpg" alt="虫眼鏡を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  「何かしないと」とは
+                  <br />
+                  思うけど何したら？
+                </p>
+              </li>
+              <li class="l-category__list-item l-category__list-item--reverse">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust2.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust2.jpg" alt="松明を持った男性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  ふるさと納税って
+                  <br />
+                  どう始めるの？
+                </p>
+              </li>
+              <li class="l-category__list-item">
+                <div class="l-category__list-item-illust">
+                  <picture>
+                    <source srcset="images/webp/category-illust3.webp" type="image/webp" width="324" height="226" />
+                    <img src="images/category-illust3.jpg" alt="お金とハートを持った女性のイラスト" width="324" height="226" />
+                  </picture>
+                </div>
+                <p class="l-category__list-item-text">
+                  節税して使える
+                  <br />
+                  お金が増えないかな？
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="l-chart__free-counseling">
+          <div class="l-chart__free-counseling-inner">
+            <p class="l-chart__free-counseling-text js-scroll">お金のお悩みも解決方法も人それぞれ。あなたに一番あった方法をお金のプロに相談しましょう！</p>
+            <p class="l-chart__free-counseling-heading js-scroll"><img src="images/chart-free-head.svg" alt="相談無料" width="266" height="260" /></p>
+            <div class="l-chart__free-counseling-figure js-scroll">
+              <div class="l-chart__free-counseling-figure-illust">
+                <picture>
+                  <source srcset="images/webp/chart-free-illust.webp" type="image/webp" width="418" height="385" />
+                  <img src="images/chart-free-illust.png" alt="男性のイラスト" width="418" height="385" />
+                </picture>
+              </div>
+              <p class="l-chart__free-counseling-figure-pop">
+                <picture>
+                  <source srcset="images/webp/chart-free-pop.webp" type="image/webp" width="144" height="144" />
+                  <img src="images/chart-free-pop.png" alt="2回目以降も" width="144" height="144" />
+                </picture>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="l-financial">
+        <p class="l-section__heading l-section__heading--financial js-scroll"><img src="images/financial-head.svg" alt="financial ファイナンシャルアドバイスサービス 面談の流れ" width="550" height="390" /></p>
+        <ul class="l-financial__list">
+          <li class="l-financial__list-item js-scroll">
+            <p class="l-financial__list-index">1</p>
+            <div class="l-financial__list-illust l-financial__list-illust--reservation">
+              <picture>
+                <source srcset="images/webp/financial-illust1.webp" type="image/webp" width="171" height="113" />
+                <img src="images/financial-illust1.png" alt="ご予約のイラスト" width="171" height="113" />
+              </picture>
+            </div>
+            <p class="l-finacial__list-text">
+              このお電話で面談の
+              <br />
+              ご予約をお取りします。
+            </p>
+          </li>
+          <li class="l-financial__list-item js-scroll">
+            <p class="l-financial__list-index">2</p>
+            <div class="l-financial__list-illust l-financial__list-illust--post">
+              <picture>
+                <source srcset="images/webp/financial-illust2.webp" type="image/webp" width="108" height="139" />
+                <img src="images/financial-illust2.png" alt="郵便ポストのイラスト" width="108" height="139" />
+              </picture>
+            </div>
+            <p class="l-finacial__list-text">
+              後日、面談のお知らせを
+              <br />
+              お手紙でお送りします。
+            </p>
+          </li>
+          <li class="l-financial__list-item js-scroll">
+            <p class="l-financial__list-index">3</p>
+            <div class="l-financial__list-illust l-financial__list-illust--person">
+              <picture>
+                <source srcset="images/webp/financial-illust3.webp" type="image/webp" width="127" height="216" />
+                <img src="images/financial-illust3.png" alt="アドバイザーのイラスト" width="127" height="216" />
+              </picture>
+            </div>
+            <p class="l-finacial__list-text">
+              FPと面談してお金の悩み
+              <br />
+              をクリアにしましょう！
+            </p>
+          </li>
+        </ul>
+      </section>
+      <div class="l-outro">
+        <ul class="l-outro__button-list">
+          <li class="l-button__list-item js-scroll">
+            <a href="" class="l-button__list-link l-button__list-link--orange">
+              <div class="l-button__list-icon">
+                <picture>
+                  <source srcset="images/webp/button-icon1.webp" type="image/webp" width="107" height="107" />
+                  <img src="images/button-icon1.png" alt="アドバイザーのアイコン" width="107" height="107" />
+                </picture>
+              </div>
+              <p class="l-button__list-text">SMSで問い合わせ</p>
+              <div class="l-button__list-arrow"><img src="images/button-arrow-orange.svg" alt="矢印のアイコン" width="30" height="30" /></div>
+            </a>
+          </li>
+          <li class="l-button__list-item js-scroll">
+            <a href="" class="l-button__list-link l-button__list-link--blue">
+              <div class="l-button__list-icon">
+                <picture>
+                  <source srcset="images/webp/button-icon2.webp" type="image/webp" width="107" height="107" />
+                  <img src="images/button-icon2.png" alt="アドバイザーのアイコン" width="107" height="107" />
+                </picture>
+              </div>
+              <p class="l-button__list-number">
+                0120-829-689
+                <br />
+                <span class="l-button__list-number-small">受付時間 10:00 〜 19:30</span>
+              </p>
+              <div class="l-button__list-arrow"><img src="images/button-arrow-blue.svg" alt="矢印のアイコン" width="30" height="30" /></div>
+            </a>
+          </li>
+        </ul>
+        <p class="l-outro__attention js-scroll">※年末年始のほか、臨時休業となる場合がございます</p>
+        <p class="l-outro__text js-scroll">
+          <span class="l-outro__text-inner">
+            配信停止をご希望の場合は<a href="" target="_blank" class="l-outro__text-link">こちら</a>からお手続きください。
+          </span>
+        </p>
+        <div class="l-outro__banner js-scroll">
+          <picture>
+            <source srcset="images/webp/banner.webp" type="image/webp" width="750" height="276" />
+            <img src="images/banner.jpg" alt="ぜひこの機会にお話だけでも聞いてみてください！" width="750" height="276" />
+          </picture>
+        </div>
+      </div>
+    </div>
+    <div class="l-modal l-modal--modal1">
+      <div class="l-modal__content">
+        <div class="l-modal__close">
+          <div class="l-modal__close-icon"><img src="images/modal-close.svg" alt="閉じるアイコン" width="25" height="25" /></div>
+        </div>
+        <div class="l-modal__content-inner">
+          <p class="l-modal__heading">資産運用</p>
+          <p class="l-modal__text">
+            iDeCoやNISAなど
+            <br />
+            すでに始めているものはありますか？
+          </p>
+          <ul class="l-modal__list">
+            <li class="l-modal__list-item" data-modal="1">
+              <div class="l-modal__list-illust">
+                <picture>
+                  <source srcset="images/webp/modal-yes.webp" type="image/webp" width="158" height="158" />
+                  <img src="images/modal-yes.png" alt="はいのイラスト" width="158" height="158" />
+                </picture>
+              </div>
+              <p class="l-modal__list-text">はい</p>
+            </li>
+            <li class="l-modal__list-item" data-modal="2">
+              <div class="l-modal__list-illust">
+                <picture>
+                  <source srcset="images/webp/modal-no.webp" type="image/webp" width="158" height="158" />
+                  <img src="images/modal-no.png" alt="いいえのイラスト" width="158" height="158" />
+                </picture>
+              </div>
+              <p class="l-modal__list-text">いいえ</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="l-modal l-modal--modal2">
+      <div class="l-modal__content">
+        <div class="l-modal__close">
+          <div class="l-modal__close-icon"><img src="images/modal-close.svg" alt="閉じるアイコン" width="25" height="25" /></div>
+        </div>
+        <div class="l-modal__content-inner">
+          <p class="l-modal__heading">保険</p>
+          <p class="l-modal__text">
+            医療保険や死亡保険には
+            <br />
+            加入していらっしゃいますか？
+          </p>
+          <ul class="l-modal__list">
+            <li class="l-modal__list-item" data-modal="3">
+              <div class="l-modal__list-illust">
+                <picture>
+                  <source srcset="images/webp/modal-yes.webp" type="image/webp" width="158" height="158" />
+                  <img src="images/modal-yes.png" alt="はいのイラスト" width="158" height="158" />
+                </picture>
+              </div>
+              <p class="l-modal__list-text">はい</p>
+            </li>
+            <li class="l-modal__list-item" data-modal="4">
+              <div class="l-modal__list-illust">
+                <picture>
+                  <source srcset="images/webp/modal-no.webp" type="image/webp" width="158" height="158" />
+                  <img src="images/modal-no.png" alt="いいえのイラスト" width="158" height="158" />
+                </picture>
+              </div>
+              <p class="l-modal__list-text">いいえ</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="l-modal l-modal--modal3">
+      <div class="l-modal__content">
+        <div class="l-modal__close">
+          <div class="l-modal__close-icon"><img src="images/modal-close.svg" alt="閉じるアイコン" width="25" height="25" /></div>
+        </div>
+        <div class="l-modal__content-inner">
+          <p class="l-modal__heading">ライフプラン</p>
+          <p class="l-modal__text">
+            老後資金・教育資金は
+            <br />
+            すでにご準備されていますか？
+          </p>
+          <ul class="l-modal__list">
+            <li class="l-modal__list-item" data-modal="5">
+              <div class="l-modal__list-illust">
+                <picture>
+                  <source srcset="images/webp/modal-yes.webp" type="image/webp" width="158" height="158" />
+                  <img src="images/modal-yes.png" alt="はいのイラスト" width="158" height="158" />
+                </picture>
+              </div>
+              <p class="l-modal__list-text">はい</p>
+            </li>
+            <li class="l-modal__list-item" data-modal="6">
+              <div class="l-modal__list-illust">
+                <picture>
+                  <source srcset="images/webp/modal-no.webp" type="image/webp" width="158" height="158" />
+                  <img src="images/modal-no.png" alt="いいえのイラスト" width="158" height="158" />
+                </picture>
+              </div>
+              <p class="l-modal__list-text">いいえ</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="l-modal l-modal--modal4">
+      <div class="l-modal__content">
+        <div class="l-modal__close">
+          <div class="l-modal__close-icon"><img src="images/modal-close.svg" alt="閉じるアイコン" width="25" height="25" /></div>
+        </div>
+        <div class="l-modal__content-inner">
+          <p class="l-modal__heading">節税対策</p>
+          <p class="l-modal__text">
+            ふるさと納税などの
+            <br />
+            税金対策はされていますか？
+          </p>
+          <ul class="l-modal__list">
+            <li class="l-modal__list-item" data-modal="7">
+              <div class="l-modal__list-illust">
+                <picture>
+                  <source srcset="images/webp/modal-yes.webp" type="image/webp" width="158" height="158" />
+                  <img src="images/modal-yes.png" alt="はいのイラスト" width="158" height="158" />
+                </picture>
+              </div>
+              <p class="l-modal__list-text">はい</p>
+            </li>
+            <li class="l-modal__list-item" data-modal="8">
+              <div class="l-modal__list-illust">
+                <picture>
+                  <source srcset="images/webp/modal-no.webp" type="image/webp" width="158" height="158" />
+                  <img src="images/modal-no.png" alt="いいえのイラスト" width="158" height="158" />
+                </picture>
+              </div>
+              <p class="l-modal__list-text">いいえ</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
