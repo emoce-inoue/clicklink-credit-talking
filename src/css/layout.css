@@ -101,11 +101,8 @@
 .l-section__ribbon-heading {
   position: relative;
   inline-size: calc(566 / var(--layout-width-inner) * 100%);
-  aspect-ratio: 566/70;
   margin: 0 auto calc((45 / var(--layout-width-inner)) * 100%);
-  background-image: url('../images/service-ribbon.svg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background: url('../images/service-ribbon.svg') no-repeat center / 100% 100%;
 }
 
 .l-section__ribbon-heading--point {
@@ -194,12 +191,12 @@
   margin-block-start: calc((40 / var(--layout-width-inner)) * 100%);
 }
 
-.l-sercive__list-heaging {
+.l-service__list-heading {
   display: flex;
   justify-content: center;
   align-items: center;
   inline-size: calc((465 / var(--layout-width-inner)) * 100%);
-  aspect-ratio: 465/68;
+  aspect-ratio: var(--aspect-service-head);
   margin: auto;
   background-color: var(--color-blue);
   border-radius: var(--rounded-34);
@@ -246,7 +243,7 @@
 
 .l-chart__yesno-list {
   inline-size: calc(305 / var(--layout-width-base) * 100%);
-  aspect-ratio: 305/140;
+  aspect-ratio: var(--aspect-yesno-button);
   background-color: var(--color-yellow);
   border-radius: var(--rounded-sl);
   box-shadow: var(--yesno-button-shadow);
@@ -294,11 +291,9 @@
   content: '';
   display: block;
   inline-size: calc(394 / var(--layout-width-base) * 100%);
-  aspect-ratio: 394/68;
+  aspect-ratio: var(--aspect-arrow);
   margin: auto;
-  background-image: url('../images/answer-arrow.svg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background: url('../images/answer-arrow.svg') no-repeat center / 100% auto;
 }
 
 .l-answer__intro {
@@ -334,17 +329,13 @@
 .l-answer__intro-pop-list {
   inline-size: calc(616 / var(--layout-width-base) * 100%);
   margin-inline-start: calc(78 / var(--layout-width-base) * 100%);
-  opacity: 1;
-  translate: 1;
 }
 
 .l-answer__intro-pop {
   position: relative;
   inline-size: 100%;
-  aspect-ratio: 616/119;
-  background-image: url('../images/answer-pop-frame.svg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  aspect-ratio: var(--aspect-intro-pop);
+  background: url('../images/answer-pop-frame.svg') no-repeat center / 100% auto;
   opacity: 0;
   translate: -15px -5px;
 }
@@ -523,11 +514,9 @@
   content: '';
   display: block;
   inline-size: calc(394 / var(--layout-width-base) * 100%);
-  aspect-ratio: 394/68;
+  aspect-ratio: var(--aspect-arrow);
   margin: auto;
-  background-image: url('../images/answer-arrow.svg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background: url('../images/answer-arrow.svg') no-repeat center / 100% auto;
 }
 
 .l-category__theme {
@@ -535,7 +524,7 @@
   justify-content: space-between;
   align-items: center;
   inline-size: calc(var(--layout-width-inner) / var(--layout-width-base) * 100%);
-  aspect-ratio: 650/237;
+  aspect-ratio: var(--aspect-theme);
   margin: calc(46 / var(--layout-width-base) * 100%) auto 0;
   padding-inline: calc(50 / var(--layout-width-base) * 100%);
   background-color: var(--color-yellow);
@@ -620,11 +609,9 @@
   inset-inline-start: 0;
   display: block;
   inline-size: 100%;
-  aspect-ratio: 750/110;
+  aspect-ratio: var(--aspect-free-bg);
   margin-block-start: -0.13%;
-  background-image: url('../images/chart-arrow-white.svg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background: url('../images/chart-arrow-white.svg') no-repeat top / 100% auto;
 }
 
 .l-chart__free-counseling-inner {
@@ -777,7 +764,7 @@
   align-items: center;
   justify-content: center;
   gap: calc((36 / 570) * 100%);
-  aspect-ratio: 570/133;
+  aspect-ratio: var(--aspect-link-button);
   border-radius: var(--rounded-34);
   box-shadow: var(--button-shadow);
 }
@@ -836,7 +823,7 @@
   content: '';
   display: block;
   inline-size: calc(25px / 2);
-  aspect-ratio: 1/1;
+  aspect-ratio: 1;
   background-color: var(--color-blue);
 }
 
@@ -879,7 +866,7 @@
   justify-content: center;
   align-items: center;
   inline-size: calc(57 / var(--layout-width-inner) * 100%);
-  aspect-ratio: 1/1;
+  aspect-ratio: 1;
   margin-block-start: calc(30 / var(--layout-width-inner) * 100%);
   background-color: var(--color-orange);
   border-radius: var(--rounded-full);
