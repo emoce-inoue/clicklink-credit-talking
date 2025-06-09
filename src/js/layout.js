@@ -2,7 +2,7 @@ const triggerYesNo = () => {
   const yesnoItems = document.querySelectorAll('.l-chart__yesno-list');
   const yesAnswer = document.querySelector('.l-answer--yes');
   const noAnswer = document.querySelector('.l-answer--no');
-  const typeElment = document.querySelector('.l-type');
+  const typeElement = document.querySelector('.l-type');
 
   yesnoItems.forEach((item) => {
     item.addEventListener('click', () => {
@@ -20,7 +20,7 @@ const triggerYesNo = () => {
         targetModal.classList.remove('l-modal__list-item--selected');
       });
 
-      typeElment.classList.add('l-type--opened');
+      typeElement.classList.add('l-type--opened');
 
       yesnoItems.forEach((targetItem) => targetItem.classList.remove('l-chart__yesno-list--selected'));
       document.querySelectorAll('.l-answer').forEach((answer) => answer.classList.remove('l-answer--selected'));
