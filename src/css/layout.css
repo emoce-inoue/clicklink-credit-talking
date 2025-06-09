@@ -196,6 +196,8 @@
 }
 
 .l-service__list-heading {
+  --aspect-service-head: 465/68;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,6 +248,8 @@
 }
 
 .l-chart__yesno-list {
+  --aspect-yesno-button: 305/140;
+
   inline-size: calc(305 / var(--layout-width-base) * 100%);
   aspect-ratio: var(--aspect-yesno-button);
   background-color: var(--color-yellow);
@@ -336,6 +340,8 @@
 }
 
 .l-answer__intro-pop {
+  --aspect-intro-pop: 616/119;
+
   position: relative;
   inline-size: 100%;
   aspect-ratio: var(--aspect-intro-pop);
@@ -524,6 +530,8 @@
 }
 
 .l-category__theme {
+  --aspect-theme: 650/237;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -607,6 +615,8 @@
 }
 
 .l-chart__free-counseling::before {
+  --aspect-free-bg: 750/110;
+
   content: '';
   position: absolute;
   inset-block-start: 0;
@@ -764,6 +774,8 @@
 }
 
 .l-button__list-link {
+  --aspect-link-button: 570/133;
+  
   display: flex;
   align-items: center;
   justify-content: center;
