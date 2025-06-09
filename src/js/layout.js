@@ -18,6 +18,28 @@ const triggerYesNo = () => {
   });
 };
 
+const closeModal = (modal, options = {}, context = {}) => {
+  const { shouldDeselectType = true, restoreFocus = true } = options;
+
+  const { previousFocus = null, deselectAllTypeItems = null } = context;
+
+  if (!modal || !modal.classList.contains('l-modal--opened')) {
+    return;
+  }
+
+  modal.classList.remove('l-modal--opened');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('l-body--noscroll');
+
+  if (restoreFocus && previousFocus && typeof previousFocus.focus === 'function') {
+    previousFocus.focus();
+  }
+
+  if (shouldDeselectType && typeof deselectAllTypeItems === 'function' && !document.querySelector('.l-category--selected')) {
+    deselectAllTypeItems();
+  }
+};
+
 const initializeModal = () => {
   const typeItems = document.querySelectorAll('.l-type__list-item');
   const modals = document.querySelectorAll('.l-modal');
@@ -28,24 +50,9 @@ const initializeModal = () => {
   };
 
   const closeAllModals = () => {
-    modals.forEach((modal) => closeModal(modal, true));
-  };
-
-  const closeModal = (modal, shouldDeselectType = true) => {
-    if (!modal.classList.contains('l-modal--opened')) {
-      return;
-    }
-
-    modal.classList.remove('l-modal--opened');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('l-body--noscroll');
-    if (previousFocus) {
-      previousFocus.focus();
-    }
-
-    if (shouldDeselectType && !document.querySelector('.l-category--selected')) {
-      deselectAllTypeItems();
-    }
+    modals.forEach((modal) => {
+      closeModal(modal, { shouldDeselectType: true, restoreFocus: true }, { previousFocus, deselectAllTypeItems });
+    });
   };
 
   const openModal = (modal) => {
@@ -62,7 +69,7 @@ const initializeModal = () => {
     focusTarget.focus();
   };
 
-  typeItems.forEach((item, index) => {
+  typeItems.forEach((item) => {
     item.addEventListener('click', () => {
       if (!item.classList.contains('l-type__list-item--selected')) {
         const selectedCategory = document.querySelector('.l-category--selected');
@@ -73,34 +80,34 @@ const initializeModal = () => {
 
       deselectAllTypeItems();
       item.classList.add('l-type__list-item--selected');
-
       closeAllModals();
-
-      const modalToOpen = document.querySelector(`.l-modal--modal${index + 1}`);
-      if (modalToOpen) {
-        openModal(modalToOpen);
+      const typeValue = item.dataset.type;
+      if (typeValue) {
+        const modalToOpen = Array.from(modals).find((modal) => modal.dataset.target === typeValue);
+        if (modalToOpen) {
+          openModal(modalToOpen);
+        }
       }
     });
   });
-
   modals.forEach((modal) => {
     modal.addEventListener('click', (event) => {
       if (!event.target.closest('.l-modal__content-inner')) {
-        closeModal(modal, true);
+        closeModal(modal, { shouldDeselectType: true, restoreFocus: true }, { previousFocus, deselectAllTypeItems });
       }
     });
-
     const closeBtn = modal.querySelector('.js-modal-close');
     if (closeBtn) {
-      closeBtn.addEventListener('click', () => closeModal(modal, true)); // ×ボタン → パターン①
+      closeBtn.addEventListener('click', () => {
+        closeModal(modal, { shouldDeselectType: true, restoreFocus: true }, { previousFocus, deselectAllTypeItems });
+      });
     }
   });
-
   window.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
       modals.forEach((modal) => {
         if (modal.classList.contains('l-modal--opened')) {
-          closeModal(modal, true);
+          closeModal(modal, { shouldDeselectType: true, restoreFocus: true }, { previousFocus, deselectAllTypeItems });
         }
       });
     }
@@ -117,12 +124,6 @@ const handleModalItemClick = () => {
 
   const deselectAllCategories = () => {
     categories.forEach((category) => category.classList.remove('l-category--selected'));
-  };
-
-  const closeModal = (modal) => {
-    modal.classList.remove('l-modal--opened');
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('l-body--noscroll');
   };
 
   modalListItems.forEach((item) => {
@@ -144,7 +145,7 @@ const handleModalItemClick = () => {
 
       const modal = item.closest('.l-modal');
       if (modal) {
-        closeModal(modal, false);
+        closeModal(modal, { shouldDeselectType: false, restoreFocus: false });
       }
     });
   });

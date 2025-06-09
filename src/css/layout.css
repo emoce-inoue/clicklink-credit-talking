@@ -1,4 +1,8 @@
 /* layout */
+.l-body--noscroll {
+  overflow: hidden;
+}
+
 .l-wrapper {
   z-index: var(--default-z-index);
   position: relative;

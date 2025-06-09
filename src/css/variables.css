@@ -30,13 +30,7 @@
   --fluid-ratio-max: calc(1 / var(--layout-width-max) * 100dvi);
   --aspect-video: 16/9;
   --aspect-thumbnail: 1.91/1;
-  --aspect-service-head: 465/68;
-  --aspect-yesno-button: 305/140;
   --aspect-arrow: 394/68;
-  --aspect-intro-pop: 616/119;
-  --aspect-theme: 650/237;
-  --aspect-free-bg: 750/110;
-  --aspect-link-button: 570/133;
   --rounded-xs: 2px;
   --rounded-s: 4px;
   --rounded-m: 8px;
@@ -81,3 +75,34 @@
   --speed-slow: 1s;
   --speed-over-slow: 2s;
 }
+
+.l-service__list-heading {
+  --aspect-service-head: 465/68;
+}
+
+.l-chart__yesno-list {
+  --aspect-yesno-button: 305/140;
+}
+
+.l-answer__intro-pop {
+  --aspect-intro-pop: 616/119;
+}
+
+.l-category__theme {
+  --aspect-theme: 650/237;
+}
+
+.l-chart__free-counseling::before {
+  --aspect-free-bg: 750/110;
+}
+
+.l-button__list-link {
+  --aspect-link-button: 570/133;
+}
+
+
+
+
+
+
+
