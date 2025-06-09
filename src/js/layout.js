@@ -2,11 +2,25 @@ const triggerYesNo = () => {
   const yesnoItems = document.querySelectorAll('.l-chart__yesno-list');
   const yesAnswer = document.querySelector('.l-answer--yes');
   const noAnswer = document.querySelector('.l-answer--no');
-  const typeElm = document.querySelector('.l-type');
+  const typeElement = document.querySelector('.l-type');
 
   yesnoItems.forEach((item) => {
     item.addEventListener('click', () => {
-      typeElm.classList.add('l-type--opened');
+      if (item.classList.contains('l-chart__yesno-list--selected')) {
+        return;
+      }
+
+      document.querySelectorAll('.l-type__list-item--selected').forEach((targetType) => {
+        targetType.classList.remove('l-type__list-item--selected');
+      });
+      document.querySelectorAll('.l-category--selected').forEach((targetCategory) => {
+        targetCategory.classList.remove('l-category--selected');
+      });
+      document.querySelectorAll('.l-modal__list-item--selected').forEach((targetModal) => {
+        targetModal.classList.remove('l-modal__list-item--selected');
+      });
+
+      typeElement.classList.add('l-type--opened');
 
       yesnoItems.forEach((targetItem) => targetItem.classList.remove('l-chart__yesno-list--selected'));
       document.querySelectorAll('.l-answer').forEach((answer) => answer.classList.remove('l-answer--selected'));
