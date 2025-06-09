@@ -624,7 +624,7 @@
   display: block;
   inline-size: 100%;
   aspect-ratio: var(--aspect-free-bg);
-  margin-block-start: -0.13%;
+  margin-block-start: -0.14%;
   background: url('../images/chart-arrow-white.svg') no-repeat top / 100% auto;
 }
 
@@ -775,7 +775,7 @@
 
 .l-button__list-link {
   --aspect-link-button: 570/133;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
