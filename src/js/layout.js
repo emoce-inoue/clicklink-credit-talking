@@ -155,6 +155,13 @@ const handleModalItemClick = () => {
       deselectAllCategories();
       if (selectedCategory) {
         selectedCategory.classList.add('l-category--selected');
+
+        const rect = selectedCategory.getBoundingClientRect();
+        const scrollTop = window.scrollY + rect.top;
+        selectedCategory.scrollIntoView({
+          top: scrollTop,
+          behavior: 'smooth',
+        });
       }
 
       const modal = item.closest('.l-modal');
